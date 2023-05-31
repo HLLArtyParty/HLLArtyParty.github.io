@@ -30,58 +30,15 @@ body {
   padding: 20px;
 }
 
-#title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-}
-
-#title::before,
-#title::after {
-  content: "🎉";
-  font-size: 32px;
-  margin-right: 10px;
-}
-
-#mils-result {
-  font-size: 32px;
-  font-weight: bold;
-  color: red;
-}
-
-th {
-  background-color: #dddddd;
-}
-
-.lock-checkbox {
-  margin: 0 auto;
-  display: block;
-}
-
-/* Additional styling for better visibility */
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  padding: 10px;
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   #title::before,
   #title::after {
     font-size: 24px;
@@ -118,4 +75,12 @@ tr:hover {
   .lock-checkbox {
     transform: scale(1.5);
   }
+}
+
+/* Styling for Column Names */
+th {
+  background-color: #e9e9e9;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
 }
