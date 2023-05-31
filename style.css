@@ -39,8 +39,7 @@ h1 {
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
-  h1::before,
-  h1::after {
+  h1 {
     font-size: 24px;
   }
 
@@ -63,12 +62,12 @@ h1 {
 
   input[type="text"],
   select {
-    font-size: 1em;
+    font-size: 16px;
     padding: 8px;
   }
 
   input[type="button"] {
-    font-size: 1em;
+    font-size: 16px;
     padding: 10px;
   }
 
