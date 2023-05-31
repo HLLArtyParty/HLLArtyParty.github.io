@@ -21,7 +21,7 @@ html, body {
 }
 
 .container {
-  max-width: 1600px; /* Adjust the maximum width based on your design */
+  max-width: 600px; /* Adjust the maximum width based on your design */
   margin: 0 auto;
   padding: 20px;
 }
@@ -62,7 +62,7 @@ table {
 }
 
 th, td {
-  padding: 8px;
+  padding: 12px; /* Increase padding for table cells */
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -79,14 +79,14 @@ tr:hover {
 @media screen and (max-width: 600px) {
   #title::before,
   #title::after {
-    font-size: 24px;
+    font-size: 36px; /* Increase font size for confetti emojis */
   }
   
   #mils-result {
-    font-size: 24px;
+    font-size: 36px; /* Increase font size for the result */
   }
   
   table {
-    font-size: 14px;
+    font-size: 18px; /* Increase font size for the table */
   }
 }
