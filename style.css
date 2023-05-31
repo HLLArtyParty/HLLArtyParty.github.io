@@ -38,7 +38,7 @@ h1 {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   #title::before,
   #title::after {
     font-size: 24px;
