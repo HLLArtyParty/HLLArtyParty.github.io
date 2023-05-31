@@ -1,0 +1,72 @@
+body {
+  background-image: url('woodland_camo.jpg'); /* Replace 'woodland_camo.jpg' with the path to your woodland camo image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Add positioning to enable layer */
+}
+
+html, body {
+  height: 100%; /* Set the height of html and body elements to 100% */
+}
+
+#background-layer {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white layer */
+  position: fixed; /* Position layer as fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place layer behind other content */
+}
+
+/* Rest of the CSS code remains the same */
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#title::before,
+#title::after {
+  content: "🎉"; /* Add confetti emojis */
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+#mils-result {
+  font-size: 32px; /* Increase font size for the result */
+  font-weight: bold;
+  color: red;
+}
+
+th {
+  background-color: #dddddd; /* Add background color for column names */
+}
+
+.lock-checkbox {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Additional styling for better visibility */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
