@@ -30,10 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
       const mils = convertToMils(country, distance);
       if (!isNaN(mils)) {
         milsResult.textContent = mils.toFixed(2);
+        milsResult.classList.add('red-text'); // Add the "red-text" class
         return;
       }
     }
     milsResult.textContent = '';
+    milsResult.classList.remove('red-text'); // Remove the "red-text" class
   }
 
   // Function to add a new history entry

@@ -30,6 +30,7 @@ th,
 td {
   padding: 10px;
   text-align: left;
+  border: 2px solid black; /* Set border thickness and color */
 }
 
 .lock-checkbox {
@@ -71,6 +72,8 @@ td {
 
   #mils-result {
     font-size: 24px;
+    font-weight: bold;
+    color: red;
   }
 
   table {
@@ -98,4 +101,36 @@ td {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7); /* Set the background color to white with 70% opacity */
   z-index: -1;
+}
+
+.red-text {
+  color: red; /* Set the text color to red */
+  font-weight: bold; /* Set the font weight to bold */
+  font-size: 24px; /* Set the font size to 24px */
+}
+
+/* Set background color for the row with the title */
+#history-table thead tr {
+  background-color: #e6e6e6; /* Set the light gray background color */
+}
+
+/* Set background color for the row with the names */
+#history-table tbody tr:nth-child(2) {
+  background-color: #d9d9d9; /* Set the light blue background color */
+}
+
+/* Remove background color from odd number entries */
+#history-table tbody tr:nth-child(odd) {
+  background-color: initial;
+}
+
+/* Add alternating background colors to even number entries starting from the 4th row */
+#history-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Set the light blue background color */
+}
+
+/* Add border between table cells */
+#history-table th,
+#history-table td {
+  border: 2px solid black;
 }
