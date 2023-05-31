@@ -53,9 +53,15 @@ td {
     box-sizing: border-box;
   }
 
-  button {
+  #convert-section {
+    text-align: center;
+  }
+
+  #convert-button {
     font-size: 18px;
     padding: 12px;
+    display: block;
+    margin: 0 auto;
   }
 
   #result-section {
@@ -69,17 +75,5 @@ td {
   table {
     font-size: 16px;
     width: 100%;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    padding: 8px;
-    font-size: 16px;
-    text-align: left;
-  }
-
-  .lock-checkbox {
-    transform: scale(1.5);
   }
 }
