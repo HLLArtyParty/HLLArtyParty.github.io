@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Conversion equations
   const conversionEquations = {
-    'US': (x) => ((1600 - x) * 0.237333) + 622,
+    'US/DE': (x) => ((1600 - x) * 0.237333) + 622,
     'RUS': (x) => ((1600 - x) * 0.213333) + 800,
     'UK': (x) => ((1600 - x) * 0.177333) + 267
   };
