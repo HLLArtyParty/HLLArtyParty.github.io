@@ -1,27 +1,29 @@
 body {
-  background-image: url('woodland_camo.jpg'); /* Replace 'woodland_camo.jpg' with the path to your woodland camo image */
+  background-image: url('woodland_camo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative; /* Add positioning to enable layer */
+  position: relative;
 }
 
 html, body {
-  height: 100%; /* Set the height of html and body elements to 100% */
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #background-layer {
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white layer */
-  position: fixed; /* Position layer as fixed */
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Place layer behind other content */
+  z-index: -1;
 }
 
 .container {
-  max-width: 1600px; /* Adjust the maximum width based on your design */
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -35,19 +37,19 @@ html, body {
 
 #title::before,
 #title::after {
-  content: "🎉"; /* Add confetti emojis */
+  content: "🎉";
   font-size: 32px;
   margin-right: 10px;
 }
 
 #mils-result {
-  font-size: 32px; /* Increase font size for the result */
+  font-size: 32px;
   font-weight: bold;
   color: red;
 }
 
 th {
-  background-color: #dddddd; /* Add background color for column names */
+  background-color: #dddddd;
 }
 
 .lock-checkbox {
@@ -62,7 +64,7 @@ table {
 }
 
 th, td {
-  padding: 12px; /* Increase padding for table cells */
+  padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -79,14 +81,22 @@ tr:hover {
 @media screen and (max-width: 600px) {
   #title::before,
   #title::after {
-    font-size: 36px; /* Increase font size for confetti emojis */
+    font-size: 24px;
   }
   
   #mils-result {
-    font-size: 36px; /* Increase font size for the result */
+    font-size: 24px;
   }
   
   table {
-    font-size: 18px; /* Increase font size for the table */
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  th, td {
+    padding: 6px;
   }
 }
