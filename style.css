@@ -1,43 +1,4 @@
-body {
-  background-image: url('woodland_camo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  font-size: 16px;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#background-layer {
-  background-color: rgba(255, 255, 255, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 36px;
-  margin: 0;
-  padding: 10px;
-}
-
-/* Responsive Styles */
+/* Styles for mobile devices */
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 24px;
@@ -51,7 +12,7 @@ h1 {
     font-size: 16px;
   }
 
-  .container {
+  body {
     padding: 10px;
   }
 
@@ -75,12 +36,4 @@ h1 {
   .lock-checkbox {
     transform: scale(1.5);
   }
-}
-
-/* Styling for Column Names */
-th {
-  background-color: #e9e9e9;
-  font-weight: bold;
-  padding: 8px;
-  text-align: center;
 }
