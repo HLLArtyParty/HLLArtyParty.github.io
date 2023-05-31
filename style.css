@@ -1,7 +1,65 @@
+/* Default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+select,
+input[type="text"] {
+  font-size: 20px;
+  padding: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.lock-checkbox {
+  transform: scale(1.5);
+}
+
 /* Styles for mobile devices */
 @media screen and (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
   h1 {
     font-size: 24px;
+  }
+
+  input[type="text"],
+  select {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  #result-section {
+    margin-top: 20px;
   }
 
   #mils-result {
@@ -10,27 +68,15 @@
 
   table {
     font-size: 16px;
-  }
-
-  body {
-    padding: 10px;
+    width: 100%;
+    border-collapse: collapse;
   }
 
   th,
   td {
     padding: 8px;
     font-size: 16px;
-  }
-
-  input[type="text"],
-  select {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  input[type="button"] {
-    font-size: 16px;
-    padding: 10px;
+    text-align: left;
   }
 
   .lock-checkbox {
