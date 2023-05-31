@@ -85,6 +85,7 @@ td {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f2f2f2;
+  background-image: url('woodland-camo.jpg');
+  background-size: cover;
   z-index: -1;
 }
