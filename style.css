@@ -6,14 +6,15 @@ body {
   position: relative;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 #background-layer {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -63,8 +64,9 @@ table {
   width: 100%;
 }
 
-th, td {
-  padding: 8px;
+th,
+td {
+  padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -83,20 +85,36 @@ tr:hover {
   #title::after {
     font-size: 24px;
   }
-  
+
   #mils-result {
     font-size: 24px;
   }
-  
+
   table {
-    font-size: 14px;
+    font-size: 16px;
   }
-  
+
   .container {
     padding: 10px;
   }
-  
-  th, td {
-    padding: 6px;
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  input[type="text"],
+  select {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  input[type="button"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .lock-checkbox {
+    transform: scale(1.5);
   }
 }
