@@ -21,7 +21,7 @@ html, body {
 }
 
 .container {
-  max-width: 600px; /* Adjust the maximum width based on your design */
+  max-width: 1600px; /* Adjust the maximum width based on your design */
   margin: 0 auto;
   padding: 20px;
 }
