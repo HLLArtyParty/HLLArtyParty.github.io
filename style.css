@@ -20,7 +20,11 @@ html, body {
   z-index: -1; /* Place layer behind other content */
 }
 
-/* Rest of the CSS code remains the same */
+.container {
+  max-width: 600px; /* Adjust the maximum width based on your design */
+  margin: 0 auto;
+  padding: 20px;
+}
 
 #title {
   display: flex;
@@ -69,4 +73,20 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  #title::before,
+  #title::after {
+    font-size: 24px;
+  }
+  
+  #mils-result {
+    font-size: 24px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
 }
