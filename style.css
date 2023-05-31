@@ -94,6 +94,7 @@ td {
   height: 150px;
   background-image: url('icon.png');
   background-size: cover;
+  z-index: 9999;
 }
 
 /* Alternating background colors for columns in history table */
